@@ -6,4 +6,4 @@ WIP
 
 &raquo; WIP
 
-Or go back to [Docker commands and options](exercices/04-docker-commands.md)
+Or go back to [Docker commands and options](./04-docker-commands.md)

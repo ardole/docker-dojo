@@ -197,6 +197,6 @@ To get further, see https://docs.docker.com/engine/reference/run/.
 
 ## Next Step
 
-&raquo; [Images and layers](exercices/03-images-layers.md)
+&raquo; [Images and layers](./03-images-layers.md)
 
-Or go back to [Containers ?](exercices/01-containers.md)
+Or go back to [Containers ?](./01-containers.md)
