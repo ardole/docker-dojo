@@ -1,4 +1,4 @@
-# Images and layers
+# Understand Docker images
 
 WIP
 

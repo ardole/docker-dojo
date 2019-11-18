@@ -1,4 +1,4 @@
-# Docker commands and options
+# Discover useful docker commands and options
 
 WIP
 
