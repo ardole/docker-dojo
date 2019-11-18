@@ -174,6 +174,8 @@ docker run --name "my-httpd-server" -p="8081:80" httpd:2.4
 
 - Start, stop and remove a container using a meaningful name.
 
+- Try to start too containers with the same name ?
+
 ## Process
 
 In order to finish this small lesson, start a new container, and then run a **ps** (not the docker one, but the linux one) 

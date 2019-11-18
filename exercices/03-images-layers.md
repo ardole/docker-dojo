@@ -2,6 +2,39 @@
 
 Let go to see more about **images**.
 
+## What is an image
+
+You well know what is a Virtual Machine image, it is a complete machine with an OS.
+
+So, what contains a container image if it does not contains an entire OS ?
+
+In fact it looks like a light linux distribution, it contains some pieces of system programs and dependencies,
+the least possible, the only ones necessary for your application.
+
+If you like inside a container, you will find that it is just a linux file system, here an example of output:
+
+```console
+ls -l /
+total 4
+drwxr-xr-x.   1 root root    6 Oct 30 23:33 bin
+drwxr-xr-x.   2 root root    6 Aug 30 12:31 boot
+drwxr-xr-x.   5 root root  340 Nov 18 11:08 dev
+drwxr-xr-x.   1 root root   66 Nov 18 11:08 etc
+drwxr-xr-x.   2 root root    6 Aug 30 12:31 home
+drwxr-xr-x.   1 root root   41 Oct 30 23:33 lib
+drwxr-xr-x.   2 root root    6 Oct 14 00:00 media
+drwxr-xr-x.   2 root root    6 Oct 14 00:00 opt
+dr-xr-xr-x. 116 root root    0 Nov 18 11:08 proc
+drwx------.   2 root root   37 Oct 14 00:00 root
+drwxr-xr-x.   3 root root   30 Oct 14 00:00 run
+drwxr-xr-x.   2 root root 4096 Oct 14 00:00 sbin
+drwxr-xr-x.   2 root root    6 Oct 14 00:00 srv
+dr-xr-xr-x.  13 root root    0 Nov 18 10:51 sys
+drwxrwxrwt.   1 root root    6 Oct 30 23:32 tmp
+drwxr-xr-x.   1 root root   19 Oct 14 00:00 usr
+drwxr-xr-x.   1 root root   41 Oct 14 00:00 var
+```
+
 ## Pull and run
 
 On the previous exercice, you've downloaded an image by using the command *pull*.
