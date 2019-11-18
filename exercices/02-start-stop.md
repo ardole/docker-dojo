@@ -166,7 +166,7 @@ You can use something like *docker stop $(docker ps -q)* in order to stop all ru
 
 ## Name your containers
 
-Use a name is better than an ID. So you can use option -n in order to give a unique name to your containers.
+Use a name is better than an ID. So you can use option *--name* in order to give a unique name to your containers.
 
 ```shell script
 docker run --name "my-httpd-server" -p="8081:80" httpd:2.4 
