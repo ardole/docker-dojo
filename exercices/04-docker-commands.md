@@ -1,6 +1,6 @@
 # Discover useful docker commands and options
 
-You already know the basics command of the docker command line:
+You already know the basic commands of docker:
 
 Command|Description
 :---: | :---:
@@ -125,7 +125,6 @@ you will not use it.
 ## Logs
 
 When you start a container, you start an application, a process.
-
 Most processes have outputs. These are the logs.
 
 - To print the logs of a container, simply use command *logs*.
