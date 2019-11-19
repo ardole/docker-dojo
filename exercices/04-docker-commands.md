@@ -93,6 +93,28 @@ exit
 [docker@vm ~]
 ```
 
+## Runtime environment
+
+You can add environment properties that can be used by applications inside container, as containers
+don't share host environment.
+
+- Add option *-e* to run command, check by running *env* inside container.
+
+```console
+[docker@vm ~] docker run --name "my-httpd-server" -p="80:80" -d -e "MY_ENV=thevalue" -e "MY_ENV_2=thevalue2" httpd:2.4
+03941d68178185607caa023210c8f4e1cafa0425cecb114851994a07fd607e4d
+[docker@vm ~] docker exec my-httpd-server env
+PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+HOSTNAME=03941d681781
+MY_ENV=thevalue
+MY_ENV_2=thevalue2
+HTTPD_PREFIX=/usr/local/apache2
+HTTPD_VERSION=2.4.41
+HTTPD_SHA256=133d48298fe5315ae9366a0ec66282fa4040efa5d566174481077ade7d18ea40
+HTTPD_PATCHES=
+HOME=/root
+```
+
 ## Copy
 
 You can't *vi* inside a container but you can modify files by copying them from your host to the container.
